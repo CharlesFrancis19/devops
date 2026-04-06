@@ -23,21 +23,21 @@
 name: Charles 
 on: push   
 jobs: 
-  sangeetha:
+  test:
     runs-on: ubuntu-latest
-    steps: 
-      - name: Remind in class
-        run: echo "Anna time is over"
-      - name: Call with Sindhu 
-        run: echo "Anna solitharadhu puriyala d!!!"
-      - name: Wait for 10 seconds
-        run: sleep 10
-  
-  srihari:
+    steps:
+      - run: echo "Running tests"
+
+  build:
     runs-on: ubuntu-latest
-    needs: sangeetha
-    steps: 
-      - name: Work after class
-        run: echo "Working after class"
+    needs: test
+    steps:
+      - run: echo "Building project"
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - run: echo "Deploying"
        
 
