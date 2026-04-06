@@ -1,20 +1,31 @@
-name: test-workflow
-on: push
-jobs:
-  test:
-    runs-on: ubuntu-latest
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+# name: test-workflow
+# on: push
+# jobs:
+#   test:
+#     runs-on: ubuntu-latest
+#     env:
+#       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
-    steps:
-      - name: Get code
-        uses: actions/checkout@v4
-      - name: Install Node js
-        uses: actions/setup-node@v4
-        with: 
-          node-version: 20
-          cache: 'npm'
-      - name: Install Dependencies
-        run: npm ci
-      - name : Run test
-        run: npm run test
+#     steps:
+#       - name: Get code
+#         uses: actions/checkout@v4
+#       - name: Install Node js
+#         uses: actions/setup-node@v4
+#         with: 
+#           node-version: 20
+#           cache: 'npm'
+#       - name: Install Dependencies
+#         run: npm ci
+#       - name : Run test
+#         run: npm run test
+
+
+name: Charles 
+on: push   
+jobs: 
+  sangeetha:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Remind in class
+        run: echo "Anna time is over"
+        
