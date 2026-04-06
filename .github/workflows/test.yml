@@ -38,20 +38,3 @@ jobs:
         run: echo "Working after class"
        
 
-name: Aakaash
-on: push   
-jobs: 
-  sangeetha:
-    runs-on: ubuntu-latest
-    steps: 
-      - name: Remind in class
-        run: echo "Anna time is over"
-      - name: Call with Sindhu 
-        run: echo "Anna solitharadhu puriyala d!!!"
-  
-  srihari:
-    runs-on: ubuntu-latest
-    steps: 
-      - name: Work after class
-        run: echo "Working after class"
-       
